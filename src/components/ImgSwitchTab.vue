@@ -14,6 +14,7 @@ export default {
     swichtab(index) {
       this.$store.commit("switchTabIndex", { index: index });
       this.$store.commit("SwitchImgSwitch", {});
+      
       //this.$store.state.tab_active_index = index;
     }
   }

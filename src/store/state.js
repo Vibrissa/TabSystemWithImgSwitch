@@ -46,13 +46,21 @@ export const state = {
 
 export const mutations = {
   async switchTabIndex(state, data) {
+    //-------------------------截圖區塊---------------------------
     const old_index = state.tab_active_index;
     const canvas = await html2canvas(document.querySelector(".tab-content"));
     const base64data = canvas.toDataURL("image/png");
     state.tab_imgbox[old_index].base64data = base64data;
+    //-----------------------------------------------------------
     state.tab_active_index = data.index;
   },
-  SwitchImgSwitch(state, data) {
+  async SwitchImgSwitch(state, data) {
     state.is_show_imgswitch = !state.is_show_imgswitch;
+    //-------------------------截圖區塊---------------------------
+    const old_index = state.tab_active_index;
+    const canvas = await html2canvas(document.querySelector(".tab-content"));
+    const base64data = canvas.toDataURL("image/png");
+    state.tab_imgbox[old_index].base64data = base64data;
+    //-----------------------------------------------------------
   }
 };
