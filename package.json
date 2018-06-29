@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "TabSystemWithImgSwitch",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,20 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "element-ui": "2.4.1",
+    "html2canvas": "1.0.0-alpha.12",
+    "vue": "^2.5.16",
+    "vuex": "3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.3",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.3",
     "@vue/cli-service": "^3.0.0-rc.3",
+    "node-sass": "^4.9.0",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-url": "^7.2.1",
+    "sass-loader": "^7.0.3",
     "vue-template-compiler": "^2.5.16"
   },
   "babel": {
@@ -39,10 +47,4 @@
     "plugins": {
       "autoprefixer": {}
     }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
-}
+  }
