@@ -1,7 +1,7 @@
 <template>
  <div class="tab-header" >
  <tab v-for=" (eachtab,index) in $store.state.tabcontent" :key="eachtab" :tabtext="eachtab" :tabindex="index" />
- <div class="tab-img-switch"> <i class="fas fa-grip-horizontal" @click="ShowOrHideImgSwitch()" /> </div>
+ <div class="tab-img-switch" @click="ShowOrHideImgSwitch()"> screenshot </div>
  </div>
 </template>
 
